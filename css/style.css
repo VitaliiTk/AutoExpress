@@ -712,8 +712,12 @@ a {
     .logo {
         margin-bottom: 10px;
     }
+    .header {
+        padding-top: 15px;
+    }
     .header__top {
         padding: 15px 0 15px;
+        display: none;
     }
     .header__title {
         font-size: 41px;
