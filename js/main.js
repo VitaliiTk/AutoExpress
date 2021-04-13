@@ -68,8 +68,10 @@ $(function () {
         $("html, body").animate({scrollTop: $(_href).offset().top+"px"}, 500);
         return false;
     });
-
+    // close overlay on click
     $('.overlay').click( function () {
         $('.overlay').fadeOut();
-    })
+    });
+    // WOW js framework
+    new WOW().init();
 });
