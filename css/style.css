@@ -810,13 +810,16 @@ a {
     position: fixed;
     right: 5%;
     bottom: 5%;
-    animation: jump 1.5s ease infinite;
     cursor: pointer;
     z-index: 5;
 }
 
 .up-arrow img {
     width: 100%;
+}
+
+.animated {
+    animation: jump 1.5s infinite;
 }
 
 @keyframes jump {
@@ -828,6 +831,18 @@ a {
     }
     100% {
         transform: translateY(0);
+    }
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0);
+    }
+    50% {
+        transform: rotate(360deg);
+    }
+    100% {
+        transform: rotate(0);
     }
 }
 
